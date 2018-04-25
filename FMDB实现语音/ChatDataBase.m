@@ -45,6 +45,8 @@ static ChatDataBase *dataBase;
     unsigned int outCount;
     Ivar *members = class_copyIvarList([item class], &outCount);
     
+    
+    
     for (int i = 0; i < outCount; i ++) {
         Ivar var = members[i];
         const char *memberName = ivar_getName(var);

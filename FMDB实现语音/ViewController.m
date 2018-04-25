@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "NetViewController.h"
 #import "SimulateViewController.h"
+#import <objc/runtime.h>
+#import "SimuChatModel.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +19,7 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
+    
 }
 - (IBAction)networkAction:(UIButton *)sender {
     [self presentViewController:[NetViewController new] animated:YES completion:nil];
